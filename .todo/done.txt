@@ -1,0 +1,38 @@
+x 2020-04-14 verify api +626831
+x 2020-04-14 handle when curl response fails +626831
+x 2020-04-14 add log message to /u/spool/logs/ +626831
+x 2020-04-14 request cert approval +635208
+x 2020-04-14 handle when curl response sends empty +626831
+x 2020-04-14 test in cert +625208
+x 2020-04-15 test in prod +635208
+x 2020-04-16 send only one sys email when get a log message +626831
+x 2020-04-21 write test +626831
+x 2020-04-21 finish poc, apache reverse dns +633905
+x 2020-04-21 work +638165
+x 2020-04-22 research +638165
+x 2020-04-23 .5/3hours lockout +637447 +security
+x 2020-04-23 3 failed attempts within 60 minutes +637447 +security
+x 2020-04-23 sanitize forgot_pass.php user_id,email_address +637447 +security
+x 2020-05-04 finish sev1 incident devo +639108 +sev
+x 2020-05-04 check that there is retry limit on pw_rec/forgot_pass/reset_pass etc +637447 +security
+x 2020-05-04 Send recondo pub key again +639089 +bug
+x 2020-05-04 test in cert +639028 +security
+x 2020-05-08 Push GET to POST main.php to PROD +639028 +security
+x 2020-05-08 remediate getUrlVars +639039 +security
+x 2020-05-08 find all places where user updates/resets/new password +637447 +security
+x 2020-05-13 cannot use same password within last 24 passwords, history hasto be hashed +637447 +security
+x 2020-05-13 increase minimum pw chars to 10/15 +637447 +security
+x 2020-05-13 check if pw_rec removes sec_token when reset +637447 +security
+x 2020-05-13 no userid substr in pw +637447 +security
+x 2020-05-13 password expires at 60 days +637447 +security
+x 2020-05-13 request cert approval +626831
+x 2020-05-13 CR +639047
+x 2020-05-13 Look into exposed userid/login_token after pw reset +security
+x 2020-05-13 no repeat passwords +637447 +security
+x 2020-05-13 lockout pw after 3 retries change_password_form.php +639048 +security
+x 2020-05-14 remediate pw_rec/forgot_pass/reset_pass, no lockout/retry limit +637447 +security
+x 2020-05-14 when password is change should delete from password_lockout and userids_reset +security +637447
+x 2020-05-14 check that expiration_date is being incremented properly +security +637447
+x 2020-05-14 delete password_lockout row when resetting from ops page +security +637447
+x 2020-05-15 cr +639422
+x 2020-05-20 remove * % from special chars +637447 +security
