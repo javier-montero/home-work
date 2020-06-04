@@ -1,13 +1,15 @@
 syntax enable
 
 "THEME
-set termguicolors
-let g:sonokai_style='shusia'
-let g:sonokai_transparent_background=0
-colorscheme sonokai
+"set termguicolors
+"let g:sonokai_style='shusia'
+"let g:sonokai_transparent_background=0
+"colorscheme sonokai
 
 let g:pathogen_disabled = []
 call add(g:pathogen_disabled, 'vim-coloresque')
+call add(g:pathogen_disabled, 'syntastic')
+call add(g:pathogen_disabled, 'vim-gitgutter')
 execute pathogen#infect()
 
 "TAB
@@ -18,9 +20,12 @@ set noexpandtab
 set list
 set listchars=tab:>.,trail:.,extends:#,nbsp:.
 
-set number
+set backspace=indent,eol,start
+set nonumber
 set showcmd
-set cursorline
+set nocursorline
+"autocmd InsertEnter * highlight CursorLine guibg=#000050 guifg=fg
+"autocmd InsertLeave * highlight CursorLine guibg=#004000 guifg=fg
 set title
 set titlestring=%t%(\ (\ %{expand(\"%:p:h\")}\ )%)%(\ %a%)\ -\ [%{$USER}@%{hostname()}]
 set titleold=					" reset title when exiting vim"
@@ -42,7 +47,7 @@ set wildmode=longest:full,longest
 set wildmenu					" visual autocomplete for command menu
 
 "SEARCH
-set incsearch					" search as characters are entered
+set noincsearch					" search as characters are entered
 set hlsearch					" highlight matches
 set ignorecase
 set smartcase					" ignore case if search pattern is all lowercase
@@ -52,7 +57,7 @@ nnoremap <F12> :noh<CR>			" no highlight
 "filetype indent on				" load filetype-specific indent files
 set foldenable					" enable folding
 set foldmethod=indent			" fold automatically based on indent
-set foldlevelstart=3			" fold to n level
+set foldlevelstart=2			" fold to n level
 set foldnestmax=4
 nnoremap <space> za				" space open/closes folds
 
@@ -64,7 +69,6 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
 let g:airline_section_y=''
 
-let g:airline_theme = 'sonokai'
 
 "SYNTASTIC
 set statusline+=%#warningmsg#

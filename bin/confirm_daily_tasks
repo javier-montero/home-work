@@ -31,7 +31,7 @@ answer=${answer:-N}
 if [[ $answer == "Y" ]] || [[ $answer == "y" ]]
 then
 	echo $today > $daily_tasks
-	daily_git_push ~/.know
-	daily_git_push ~/.invent
-	daily_git_push ~/.todo
+	#daily_git_push ~/.know
+	#daily_git_push ~/.invent
+	#daily_git_push ~/.todo
 fi

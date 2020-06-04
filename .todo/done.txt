@@ -36,3 +36,12 @@ x 2020-05-14 check that expiration_date is being incremented properly +security 
 x 2020-05-14 delete password_lockout row when resetting from ops page +security +637447
 x 2020-05-15 cr +639422
 x 2020-05-20 remove * % from special chars +637447 +security
+x 2020-05-27 lessen specificity of error message to user +637447 +security
+x 2020-05-27 change logos +637447 +security
+x 2020-05-28 rework +637447 +security
+x 2020-05-28 work +637270
+x 2020-05-28 for pw_reset expiry_date change to password_criteria value +security
+x 2020-05-29 test: verify isa is updated for split +itfix +640458
+x 2020-06-03 work +641151 +devbug
+x 2020-06-03 merge new pw changes to +626831
+x 2020-06-04 Research IMS Support tool +POC

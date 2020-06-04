@@ -30,8 +30,6 @@ alias tree='tree -Csuh'    #  Nice alternative to 'recursive ls' ...
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)"           "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
- 
-
 
 # User defined scripts/alias'
 alias mv='mv -i'
@@ -56,9 +54,11 @@ alias ..="cd ../"
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
-alias vi="vim"
+alias vi="~/bin/bin/vim"
+alias vim="~/bin/bin/vim"
 alias lt="find -maxdepth 1 -type f -mtime -1"
 alias trash="trashit"
 alias back="backit"
 alias todo="todo.sh"
-alias open="xdg-open"
+alias cdj="cd /u/sources/javier.montero"
+alias cdjl="cd /u/sources/javier.montero/local"
