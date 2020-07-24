@@ -45,3 +45,11 @@ x 2020-05-29 test: verify isa is updated for split +itfix +640458
 x 2020-06-03 work +641151 +devbug
 x 2020-06-03 merge new pw changes to +626831
 x 2020-06-04 Research IMS Support tool +POC
+x 2020-06-16 test: verify whole pwk process runs for dental and claim pwk +itfix +640458
+x 2020-06-16 work +637270
+x 2020-06-16 work +640318 +security
+x 2020-06-23 work +637549
+x 2020-06-25 work +640458 +itfix
+x 2020-06-25 prune old local branches, last quarter +me
+x 2020-06-25 change font +ui
+x 2020-07-02 request cert approval +634855

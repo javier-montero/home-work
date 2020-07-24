@@ -1,9 +1,9 @@
-request cert approval +634855
-(B) update documentation on security stories +security
-(C) work +637549
-work +637270
-(B) Research current wpf/winforms +POC
-work +itfix +640458
-test: verify whole pwk process runs for dental and claim pwk +itfix +640458
-(A) work +640318 +security
-fix port 8093 +self
+x 2020-07-02 request cert approval +634855
+(C) update documentation on security stories +security
+(Z) fix port 8093 +self
+(B) work +641887 +itfix
+(B) work +642316 +ui
+(B) change theme +ui
+(D) add vector main logo +ui
+(B) implement kendo ui +642317 +ui
+nav menu +640414 +640409 +ui

@@ -53,6 +53,12 @@ set ignorecase
 set smartcase					" ignore case if search pattern is all lowercase
 nnoremap <F12> :noh<CR>			" no highlight
 
+"SPLIT
+set splitright
+
+"COPY/PASTE
+set clipboard=unnamedplus
+
 "FOLD
 "filetype indent on				" load filetype-specific indent files
 set foldenable					" enable folding
@@ -91,3 +97,8 @@ let g:gitgutter_max_signs = -1	" default value (otherwise)
 let g:goyo_width = 80				" default: 80
 let g:goyo_height = 80				" default: 85%
 let g:goyo_linenr = 0				" default: 0
+
+"Emmet
+let g:user_emmet_install_global = 0
+autocmd FileType html,css EmmetInstall
+"see: https://raw.githubusercontent.com/mattn/emmet-vim/master/TUTORIAL
