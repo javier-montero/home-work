@@ -1,10 +1,13 @@
 syntax enable
+set encoding=utf-8
 
 "THEME
-"set termguicolors
-"let g:sonokai_style='shusia'
-"let g:sonokai_transparent_background=0
-"colorscheme sonokai
+" set termguicolors
+" set t_Co=256
+" let g:sonokai_style='shusia'
+" let g:sonokai_transparent_background=0
+" colorscheme sonokai
+colorscheme zenburn
 
 let g:pathogen_disabled = []
 call add(g:pathogen_disabled, 'vim-coloresque')
@@ -51,7 +54,7 @@ set noincsearch					" search as characters are entered
 set hlsearch					" highlight matches
 set ignorecase
 set smartcase					" ignore case if search pattern is all lowercase
-nnoremap <F12> :noh<CR>			" no highlight
+vnoremap / <Esc>/\%><C-R>=line("'<")-1<CR>l\%<<C-R>=line("'>")+1<CR>l
 
 "SPLIT
 set splitright
@@ -74,7 +77,7 @@ map <F1> :NERDTreeToggle<CR>
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
 let g:airline_section_y=''
-
+let g:airline_theme='zenburn'
 
 "SYNTASTIC
 set statusline+=%#warningmsg#

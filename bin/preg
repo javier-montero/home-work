@@ -1,0 +1,9 @@
+#!/bin/bash
+
+for file in *
+do
+	if ! grep -q "$file" ../ -r
+	then
+		echo $file
+	fi
+done

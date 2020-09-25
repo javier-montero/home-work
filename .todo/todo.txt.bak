@@ -1,9 +1,8 @@
-x 2020-07-02 request cert approval +634855
 (C) update documentation on security stories +security
 (Z) fix port 8093 +self
 (B) work +641887 +itfix
 (B) work +642316 +ui
-(B) change theme +ui
+x 2020-09-04 change theme +ui
 (D) add vector main logo +ui
 (B) implement kendo ui +642317 +ui
 nav menu +640414 +640409 +ui

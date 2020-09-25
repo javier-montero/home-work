@@ -84,10 +84,10 @@ NC="\[\e[m\]"               # Color Reset
 
 ALERT=${BWhite}${On_Red} # Bold White on red background
 
-if [ -x ~/bin/todo.sh ]
-then
-	~/bin/todo.sh list
-fi
+# if [ -x ~/bin/todo.sh ]
+# then
+# 	~/bin/todo.sh list
+# fi
 
 function _exit()              # Function to run upon exit of shell.
 {
