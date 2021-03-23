@@ -1,0 +1,11 @@
+autocmd! BufRead,BufNewFile *.erb set filetype=erb
+autocmd! BufRead,BufNewFile *.vim set filetype=vim
+autocmd! BufRead,BufNewFile *.html set filetype=html
+autocmd! bufread,bufnewfile *.py set filetype=python
+autocmd! bufread,bufnewfile *.pyc set filetype=python
+autocmd! BufRead,BufNewFile *.test set filetype=tcl
+autocmd! BufRead,BufNewFile *.tcl set filetype=tcl
+autocmd! BufRead,BufNewFile *.sql set filetype=sql
+autocmd! BufRead,BufNewFile *.sql.drop set filetype=sql
+autocmd! BufRead,BufNewFile *.sql.rollback set filetype=sql
+autocmd! BufRead,BufNewFile *.sql.rollback.drop set filetype=sql

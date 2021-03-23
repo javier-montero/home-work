@@ -1,21 +1,13 @@
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
 
-#-------------------------------------------------------------
-# Source global definitions (if any)
-#-------------------------------------------------------------
-
-if [ -f /etc/bashrc ]; then
-      . /etc/bashrc   # --> Read /etc/bashrc, if present.
-fi
-
 #============================================================
 #
 #  PATH
 #
 #============================================================
 
-export PATH=$PATH:~/bin:~/.local/bin
+export PATH=$PATH:~/bin:~/.local/bin:~/bin/bin
 
 #-------------------------------------------------------------
 # Some settings
@@ -116,6 +108,12 @@ export HISTIGNORE="&:bg:fg:ll:h"
 export HISTTIMEFORMAT="$(echo -e ${BCyan})[%d/%m %H:%M:%S]$(echo -e ${NC}) "
 export HISTCONTROL=ignoredups
 
+#-------------------------------------------------------------
+# GIT
+#-------------------------------------------------------------
+
+export EDITOR=~/bin/bin/vim
+
 #============================================================
 #
 #  ALIASES AND FUNCTIONS
@@ -131,10 +129,10 @@ fi
 # Tailoring 'less'
 #-------------------------------------------------------------
 export PAGER=less
-export LESSCHARSET='latin1'
+export LESSCHARSET='utf-8'
 export LESSOPEN='|/usr/bin/lesspipe.sh %s 2>&-'
                 # Use this if lesspipe.sh exists.
-export LESS='-i -N -w  -z-4 -M -X -F -R -P%t?f%f \
+export LESS='-i -w  -z-4 -M -X -F -R -P%t?f%f \
 :stdin .?pb%pb\%:?lbLine %lb:?bbByte %bb:-...'
 
 # LESS man page colors (makes Man pages more readable).

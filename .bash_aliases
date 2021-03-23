@@ -5,7 +5,6 @@ if [ -x /usr/bin/dircolors ]; then
 	#alias dir='dir --color=always'
 	#alias vdir='vdir --color=always'
  
-	alias grep='grep --color=always'
 	alias fgrep='fgrep --color=always'
 	alias egrep='egrep --color=always'
 fi
@@ -63,6 +62,10 @@ alias back="backit"
 alias todo="todo.sh"
 alias cdj="cd /u/sources/javier.montero"
 alias cda="cd /u/sources/andrew.eng"
-alias cds="cd /u/sources/william.kasper"
+alias cdw="cd /u/sources/william.kasper"
+alias cds="cd /u/sources/stephen.howard"
+alias cdp="cd /u/sources/prajwal.k"
+alias cdh="cd /u/sources/hai.phan"
+alias cdu="cd /u/local/bin"
 alias sass="~/bin/dart-sass/sass"
 alias one="~/bin/one_line"

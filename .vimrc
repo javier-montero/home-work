@@ -1,5 +1,6 @@
 syntax enable
 set encoding=utf-8
+set nocompatible
 
 "THEME
 " set termguicolors
@@ -14,6 +15,18 @@ call add(g:pathogen_disabled, 'vim-coloresque')
 call add(g:pathogen_disabled, 'syntastic')
 call add(g:pathogen_disabled, 'vim-gitgutter')
 execute pathogen#infect()
+
+"Terminal
+fu GetTerm()
+	terminal
+	wincmd x
+	res 40
+endfu
+"autocmd VimEnter * call GetTerm()
+
+"MAPPING
+:map <esc>[1;5D <C-Left>
+:map <esc>[1;5C <C-Right>
 
 "TAB
 set tabstop=4
@@ -79,9 +92,13 @@ let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
 let g:airline_section_y=''
 let g:airline_theme='zenburn'
 
+"ALE
+nmap <silent> <C-Left> <Plug>(ale_previous_wrap)
+nmap <silent> <C-Right> <Plug>(ale_next_wrap)
+let g:airline#extensions#ale#enabled = 1
+
 "SYNTASTIC
 set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
 let g:syntastic_always_populate_loc_list = 0
