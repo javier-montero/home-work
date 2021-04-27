@@ -85,6 +85,7 @@ nnoremap <space> za				" space open/closes folds
 
 "NERDTREE
 map <F1> :NERDTreeToggle<CR>
+let g:NERDTreeWinSize=40
 
 "AIRLINE
 let g:airline#extensions#tabline#enabled = 1
